@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/cream">
+
+    <ImageView
+        android:id="@+id/iv_gambar_buku"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/foto1"
+        android:layout_marginTop="30dp"
+        android:outlineSpotShadowColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_nama_buku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sherlock Holmes"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gambar_buku"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi Buku"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_buku"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/ic_autor"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_bookmark_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_autor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Deden"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_autor"
+        app:layout_constraintStart_toEndOf="@+id/ic_autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ic_genre"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_format_list_bulleted_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_autor"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mystery,Criminal"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_genre"
+        app:layout_constraintStart_toEndOf="@+id/ic_genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/ic_tanggal"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_calendar_today_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_genre"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2007"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/ic_tanggal"
+        app:layout_constraintStart_toEndOf="@+id/ic_tanggal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sipnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sipnosis"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_tanggal"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_isi_sipnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sinopsis film Sherlock Holmes yang dirilis pada 2009 ini menceritakan tentang petualangan Sherlock Holmes beserta sahabatnya yakni Dokter John Watson dalam memburu orang-orang jahat, dan dalam film ini yang mereka buru merupakan seorang penyihir jahat yang bernama Lord Henry Blackwood. Berkisah di London pada tahun 1890, Sherlock Holmes bersama Dokter Watson berhasil menangkap Lord Blackwood yang telah melakukan tindakan keji, yakni membunuh lima orang dengan cara yang sama. Adapun alasan pembunuhan yang dilakukan oleh Blackwood ialah sebagai ritualnya untuk meningkatkan kekuatan sihirnya.   "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sipnosis"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
